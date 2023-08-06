@@ -1,0 +1,16 @@
+.avatar{
+    border-radius: 50%;
+  }
+  
+  .Avatar-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #2ba4c5;
+  }
+  
+  .Avatar-description{
+    max-width: 50vw;
+  }

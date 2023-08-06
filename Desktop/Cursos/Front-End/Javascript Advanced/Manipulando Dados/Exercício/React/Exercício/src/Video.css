@@ -1,0 +1,9 @@
+Thumbnail{
+    max-width: 25rem;
+    max-height: 25rem;
+}
+
+LikeButton{
+    max-width: 5rem;
+    max-height: auto;
+}
