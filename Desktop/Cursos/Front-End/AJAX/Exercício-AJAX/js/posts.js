@@ -7,8 +7,22 @@ let _data = {
 }
 
 const postContainer = document.getElementById('posts')
-let postMarkup = ''
-let postLength = 0
+let postMarkup = '';
+let postLength = 0;
+
+function getPosts() {
+    fetch('https://jsonplaceholder.typicode.com/posts/', {
+        headers: {
+            'Content-Type' : 'application/json; charset=UTF-8'
+        }
+    })
+    .then( response => response.json())
+    .then( data => { 
+        postLength = data.length
+        console.log(postLength)
+     })
+    .catch(error => console.error(error))  
+}
 
 // Cadastra um post
 function setPost(data) {
@@ -33,9 +47,9 @@ function getPost(id) {
         }
     })
     .then( response => response.json())
-    .then( post => { 
+    .then( post => {
             postMarkup += `
-                <div class="posts-item" id="post-${post.userId}">
+                <div class="posts-item" id="post-${post.id}">
                     <h3>${post.title}</h3>
                     <p>${post.id}</p>
                     <p>${post.body}</p>
@@ -46,19 +60,19 @@ function getPost(id) {
     .catch(error => console.error(error))
 }
 
+let id = 1;
+getPost(id)
+getPosts()
+
 const loadPost = document.getElementById('loadPost')
-
-let postIndex = 1;
-getPost(postIndex)
-
 loadPost.addEventListener('click', function(e) {
-    if(postIndex < postLength)
-        getPost(postIndex += 1)
+    if(id < postLength)
+        getPost(id += 1)
 })
 
 
 // Solicita todos os posts
-function getPosts(id) {
+function getPostId(id) {
     fetch('https://jsonplaceholder.typicode.com/posts/' + id, {
         headers: {
             'Content-Type' : 'application/json; charset=UTF-8'
@@ -66,7 +80,7 @@ function getPosts(id) {
     })
     .then( response => response.json())
     .then( (post) => { 
-        text += `<p>${post.id} possui <span>${post.title}</span> títulos no sistema</p>`
+        text += `<p>${post.id} possui o(s) título(s) <span>${post.title}</span> no sistema</p>`
         respostaId.innerHTML = text
      })
     .catch(error => console.error(error))
@@ -75,5 +89,5 @@ const respostaId = document.getElementById('respostaId')
 const pesquisaId = document.getElementById('idUsuario')
 
 pesquisaId.addEventListener('focusout', function(e) {
-   getPosts(e.target.value)
+   getPostId(e.target.value)
 })

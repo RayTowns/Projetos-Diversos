@@ -1,11 +1,9 @@
-
 const url = 'https://api.github.com/users';
 const main = document.getElementById('main')
 let text = ''
 
 function getUser(user) {
-
-    fetch(url, {
+    fetch(`${url}/${user}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json; charset=UTF-8'
@@ -25,5 +23,3 @@ const userInput = document.getElementById('username')
 userInput.addEventListener('focusout', function(event){
     getUser(event.target.value)
 })
-
-
