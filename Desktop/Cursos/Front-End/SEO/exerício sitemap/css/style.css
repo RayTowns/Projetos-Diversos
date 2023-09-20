@@ -1,0 +1,115 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+}
+
+#posts {
+    background-color: rgb(247, 245, 245);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1.5rem;
+    justify-content: start;
+    padding-left: 2rem;    
+}
+
+#respostaId {
+    background-color: rgb(255, 246, 228);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: start;
+    padding: 1rem 0.5rem; 
+    margin-bottom: 1rem; 
+}
+
+span {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: brown;
+}
+
+#pesquisar-posts{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: start;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: rgb(233, 124, 0);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 5rem;
+}
+
+h3 {
+    color: rgb(0, 123, 139);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+
+p {
+    color: darkslategray;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align:justify;
+}
+
+input[type="text"] {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.button {
+    background-color: rgb(230, 130, 0);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 2rem 0 2rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+
+}
+
+.button:hover {
+    opacity: .80;
+}
+
+.posts-item {
+    width: calc(100% / 3);
+    padding: 1rem;
+}
+
+#main, p{
+    color: chocolate;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+}
