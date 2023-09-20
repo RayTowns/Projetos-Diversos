@@ -1,0 +1,117 @@
+$font-default: arial, helvetica, roboto, sans-serif;
+$h1-color: orange;
+$h2-color: purple;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-default;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    width: 100vw;
+    position: relative;
+    height: 65vh;
+    overflow: hidden;
+    #vetorials{
+        h1{
+            color: $h1-color;
+            width: 100%;
+        }  
+    }
+    
+}
+
+#vetorials{
+    h1{
+        color: $h1-color;
+        text-align: center;
+    }
+}
+
+.sky-animation1{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    animation-name: cloud1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud1 {
+    0%   { left:-500px; top:0px;}
+    25%  { left:1500px; top:0px;}
+}
+
+.sky-animation2{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+    animation-name: cloud2;
+    animation-duration: 250s;
+    animation-delay: 5s;
+}
+@keyframes cloud2 {
+    0%   { left:-1000px; top:-500px; }
+    25%  { left:5000px; top:100px;}
+}
+
+.sky-animation3{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top:100px;
+    z-index: 3;
+    animation-name: cloud3;
+    animation-duration: 150s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud3 {
+    0%   { left:-500px; top:0px;}
+    25%  { left:1500px; top:-100px;}
+}
+
+h2{
+    color: $h2-color;
+    width: 100%;
+    text-align: center;
+}
+
+#imagens {
+    .container {
+        display:flex;
+        grid-template-columns: 1fr/4;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2.5px;
+        max-width: 90%;
+        margin: 2rem auto;
+        overflow: hidden;
+        
+        img {
+            height: auto;
+            width: 230px;
+            margin: 8px;
+            object-fit:cover;
+            object-position: bottom;
+            border: 1px solid #696868;
+
+            &:hover {
+                opacity: 50%;
+                border-color: #33f;
+            }
+        }
+
+    }
+
+}
+
+@import 'player';

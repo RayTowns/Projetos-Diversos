@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - JAX</title>
+    <link rel="stylesheet" href="./css/formstyle.css">
+</head>
+<body>
+    <h1>Validação de formulários através AJAX</h1>
+    <div class="container">
+        <form action="" id="form">
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="not-null" placeholder="Nome" id="name" name="nome">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" class="not-null" placeholder="Email" id="email" name="email">
+            </div>
+            <div class="input-group">
+                <label for="CPF">CPF</label>
+                <input type="text" class="not-null" placeholder="CPF" id="CPF" name="CPF">
+            </div>
+            <div class="input-group">
+                <label for="cep">CEP</label>
+                <input type="text" class="not-null" placeholder="CEP" id="CEP" name="CEP">
+            </div>
+
+            <div class="adress">
+                <div class="input-group">
+                    <label for="Adress">Rua</label>
+                    <input type="text" class="not-null" placeholder="Rua" id="Rua" name="Rua">
+                </div>
+                <div class="input-group">
+                    <label for="Bairro">Bairro</label>
+                    <input type="text" class="not-null" placeholder="Bairro" id="Bairro" name="Bairro">
+                </div>
+                <div class="input-group">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" class="not-null" placeholder="Cidade" id="Cidade" name="Cidade">
+                </div>
+                <div class="input-group">
+                    <label for="UF">UF</label>
+                    <input type="text" class="not-null" placeholder="UF" id="UF" name="UF" size="2">
+                </div>
+            </div>
+            <div class="input-group">
+                <button>Enviar</button>
+            </div>
+        </form>
+        <div id="mensagem"></div>
+    </div>
+    <script src="./js/formstyle.js"></script>
+</body>
+</html>

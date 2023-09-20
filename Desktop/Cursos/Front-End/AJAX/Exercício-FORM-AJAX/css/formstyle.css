@@ -1,0 +1,52 @@
+*{
+    margin: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: blue;
+}
+
+form{
+    background-color: rgb(230, 230, 230);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px grey; 
+}
+
+label{
+    font: 100;
+    color: rgb(61, 61, 61);
+    size: 12px;
+}
+
+.input-group,
+input{
+    display: block;
+    font-weight: 300;
+    color: darkslategray;
+    margin: 1rem 0;
+    width: 180px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: cornflowerblue;
+    border: 1px solid rgb(32, 70, 153);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    height: 1.8rem;
+    width: 75px;
+}
+
+#mensagem{
+    color: crimson;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+strong{
+    color: firebrick;
+}
