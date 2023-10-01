@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 22px 28px 32px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    background-color: #fbfbfb;
+    width: 90%;
+}
+
+.container {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    margin: auto calc(31px / 2);
+    
+}
+
+.menu ul li a {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #dc002d;
+    text-decoration: none;
+}
+
+.menu .selected {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    text-decoration:underline;
+}
+
+.menu .button {
+    display: grid;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    border: solid 1px #D10029;
+    height: 25px !important;
+    width: 110px !important;
+    background-color: #D10029;
+    text-align: center;
+    align-items: center;
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+#banner .imagem_banner{
+    width: 591px;
+    height: auto;
+}
+
+#banner .descricao_banner{
+    text-align: left;
+    align-content: center;
+    background-color: #D3022B;
+    height: 312px;
+    color: white;
+    padding: 0 2rem;
+}
+
+#banner .descricao_banner h2{
+    position: relative;
+    left: 4px;
+    top:35px;
+    font-family: "myriad-pro", sans-serif;
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 35.59px;
+}
+
+#banner .descricao_banner p{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14.62px;
+    line-height: 1.2rem;
+    max-width: 293px;
+    max-height: 101px;
+    top: 45px;
+    bottom: 123px;
+    left: 4px;
+    right: 69px;
+}
+
+#banner #left{
+    position: relative;
+    width: 35px;
+    height: 40px;
+    top: 70px;
+    left: 5px;
+    background-color: white;
+    overflow: hidden;
+    padding: 0;
+}
+
+#banner #right{
+    position: relative;
+    width: 35px;
+    height: 40px;
+    top: 70px;
+    right: -15px;
+    background-color: white;
+}
+
+#banner .descricao_banner svg:hover{
+    position: relative;
+    width: 40px;
+    height: 48px;
+    top:90px;
+    fill: #95001e !important;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    margin: auto calc(34px / 3);
+    gap: 3rem;
+    margin: 2.5rem 1rem 3rem 1rem;
+    width: 90%;
+}
+
+#content h2{
+    color: #262626;
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 100;
+}
+
+#content p{
+    color:#666666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+
+#content img{
+    margin-top: 0.5rem;
+}
+
+#content i{
+    align-self: center;
+    color: white;
+    background-color: #e6e6e6;
+    border: solid 1px #e6e6e6;
+    border-radius: 15%;
+    width: 20px;
+    height: 17px;
+    text-align: center;
+    margin: 0 1px 1px 0;
+}
+
+#content i:hover{
+    align-self: center;
+    color: white;
+    background-color: #e0002e;
+    border: solid 1px #e0002e;
+    border-radius: 15%;
+    width: 20px;
+    height: 17px;
+    text-align: center;
+   
+}
+
+.btn-saiba-mais {
+    position: relative;
+    border: 1px solid #dcdcdc;
+    color: #dc002d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    line-height: 15.6pt;
+    padding: 5px;
+    text-decoration: none;
+    top: 25px;
+}
+
+.btn-saiba-mais:hover {
+    color: #333333;
+}
+
+footer {
+    background-color: #e2e2e2;
+}
+
+footer .container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 1.5rem 5rem 1.5rem 2rem;
+}
+
+footer div .col-2{
+    max-width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer div .col-1{
+    max-width: 35%;
+}
+
+footer #gapp_footer{
+    width: 74px;
+    height: 85px;
+}
+
+footer #localizacao{
+    width: 78px;
+    height: 58px;
+    display: flex !important;
+    position: relative;
+    left: -40px;
+}
+
+footer p{
+    color: #333333;
+    font-size: 14px;
+    margin-left: 1.2rem;
+    display: inline-block;
+}
+
+footer small{
+    color: #7F7F7F;
+    text-align: right;
+}
+
+footer .email-gapp{
+    color: #DF002B;
+}
+
+footer h4{
+    color: #D7002B;
+    text-align: right;
+}
+
+footer .col-1 p{
+    text-align: right;
+}
